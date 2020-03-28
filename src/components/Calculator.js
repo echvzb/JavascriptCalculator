@@ -37,7 +37,7 @@ class Calculator extends React.Component {
     else{
       this.setState({
         output: "",
-        history: this.state.history + this.state.number +' '+str,
+        history: this.state.history+ ' ' + this.state.number +' '+str,
         number: ""
       });
     }
