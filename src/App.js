@@ -3,15 +3,6 @@ import "./styles.css";
 import Calculator from "./components/Calculator";
 import { Box, Container, AppBar, Toolbar, Typography } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import calculator from "./calculate";
-
-calculator("5");
-calculator("2");
-calculator("/");
-calculator("2");
-calculator("+");
-calculator("5");
-calculator("-");
 
 const theme = createMuiTheme({
   palette: {
