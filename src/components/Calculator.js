@@ -22,7 +22,9 @@ class Calculator extends React.Component {
   setHistory(str) {
     if (str === "=") {
       let result = calculate('+ '+this.state.history+' '+this.state.number)
-      console.log(result)
+      if(result===NaN){
+        this.clear
+      }
       this.setState({
         output: this.formatedNumber(result),
         history: "",
