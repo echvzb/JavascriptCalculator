@@ -24,6 +24,7 @@ class Calculator extends React.Component {
       let result = calculate('+ '+this.state.history+' '+this.state.number)
       if(result===NaN){
         this.clear()
+        return
       }
       this.setState({
         output: this.formatedNumber(result),
